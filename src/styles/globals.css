@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply h-full bg-slate-950 text-neutral-400 antialiased;
+}
+
+body {
+  @apply flex min-h-full flex-col;
+}
+
+#__next {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1:not([class]) {
+  @apply mb-2 text-3xl font-semibold text-white;
+}
+
+h2:not([class]) {
+  @apply text-2xl font-semibold text-white;
+}
+
+a:not([class]) {
+  @apply whitespace-nowrap text-blue-500 transition-colors hover:text-blue-400;
+}
